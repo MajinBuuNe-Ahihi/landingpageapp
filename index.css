@@ -11,7 +11,7 @@ html {
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
@@ -22,15 +22,17 @@ html {
 body {
   width: 100vw;
   position: relative;
+  overflow-x: hidden;
 }
 
 .landing-page {
   position: relative;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  overflow-x: hidden;
 } 
 
 .landing-page__head {
@@ -742,20 +744,44 @@ input {
       flex-wrap: wrap;
   }
   .landing-page__home {
-    padding: 37px 5%;
+    padding: 37px 0px;
+    overflow-x: hidden;
   }
   .landing-page__home-big-title {
     font-size: 58px;
     text-align: center;
   }
+  .landing-page__home-preview {
+    flex-direction: column;
+    height: 1200px;
+    align-items: center;
+  }
+  .landing-page__convenient {
+    padding: 37px 0px;
+    overflow-x: hidden;
+  }
+  .landing-page__home-preview-image {
+    height: 450px;
+    align-self: center;
+    width: 270px;
+  }
   .landing-page__convenient-list {
     flex-wrap: wrap;
-    padding: 0 5%;
-    align-items: flex-start;
+    padding:32px 0px;
+    flex-direction: column;
+    align-items: center;
   }
   .landing-page__convenient-element {
     width: 40%;
     text-align: center;
+  }
+  .landing-page__feature-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .landing-page__about {
+    padding: 37px 0px;
+    overflow-x: hidden;
   }
   .landing-page__about-container {
     flex-direction: column;
@@ -770,7 +796,8 @@ input {
     align-self: center;
   }
   .landing-page__feature {
-    padding: 37px 5%;
+    padding: 37px 0px;
+    overflow-x: hidden;
   }
   .landing-page__feature-info {
     width: 48%;
@@ -784,14 +811,20 @@ input {
   }
   .landing-page__info-growth {
     flex-wrap: wrap;
-    padding: 32px 5%;
+    padding: 32px 0px;
+    overflow-x: hidden;
   }
   .landing-page__info-growth-list {
     flex-wrap: wrap;
+    flex-direction: column;
   }
   .landing-page__infor-growth-element {
     width: 40%;
     margin-bottom: 60px;
+  }
+  .landing-page__preview {
+    padding: 32px 0px;
+    overflow-x: hidden;
   }
   .landing-page__preview-list {
     justify-content: flex-start;
@@ -800,10 +833,11 @@ input {
     gap: 20px;
   }
   .landing-page__dowload {
-    padding: 32px 5%;
+    padding: 32px 0px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    overflow-x: hidden;
   }
   .landing-page__dowload-contain {
     flex-direction: column;
@@ -819,8 +853,21 @@ input {
     align-items: center;
     flex-direction: column;
   }
+  .landing-page__contact {
+    padding: 62px 0px;
+    overflow-x: hidden;
+  }
   .landing-page__contact-form {
     width: 100%;
+  }
+  .landing-page__dowload-method {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .landing-page__testimonials {
+    padding: 32px 0px;
+    overflow-x: hidden;
   }
   #scroll-button {
     display: none;
